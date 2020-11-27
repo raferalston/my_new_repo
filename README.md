@@ -15,5 +15,7 @@
 ![Tux, the Linux mascot](https://tineye.com/images/meloncat.jpg)
 
 #### Also you can add link
+
 <https://www.markdownguide.org/basic-syntax/>
+
 Also link *[Markdown Guide](https://www.markdownguide.org/basic-syntax/)*.
