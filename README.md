@@ -6,8 +6,10 @@
 
 > ## You can use any headings, like in HTML
 >
-> - or <ul> tags
-> 1. or  <ol> tags  
+> - or ul tags
+> - or nested ul tags
+>     - i`m nested tag
+> 1. or ol tags  
 
 ### You can add an image!
 ![Tux, the Linux mascot](https://tineye.com/images/meloncat.jpg)
