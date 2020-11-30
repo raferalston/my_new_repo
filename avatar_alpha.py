@@ -2,7 +2,7 @@ import requests
 
 from bs4 import BeautifulSoup
 
-url = f'https://www.google.com/search?q=котики&source=lnms&tbm=isch'
+url = f'https://www.kiddle.co/s.php?q={query}'
 
 page = requests.get(url).text
 soup = BeautifulSoup(page, 'html.parser')

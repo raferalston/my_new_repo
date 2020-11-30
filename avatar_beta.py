@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 # Используем аргументы если они есть, иначе через input
 query = sys.argv[1] if len(sys.argv) > 1 else input('Введите тип вашего аватара: ')
 
-url = f'https://www.google.com/search?q={query}&source=lnms&tbm=isch'
+url = f'https://www.kiddle.co/s.php?q={query}'
 
 page = requests.get(url).text
 soup = BeautifulSoup(page, 'html.parser')
