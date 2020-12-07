@@ -1,20 +1,20 @@
-# Welcome to my first repository
+# Разметка в файле очень похожа на HTML
+---
+# Заголовок 1
+## Заголовок 2
 
-✅ Here will be my initialization text
+**жирный текст**
+*курсив*
+> Выделенный текст
 
-> **bold text** *italic text* **_bold and italic_** 
+- Несортированный список
+1. Сортированный список
 
-## You can use any headings, like in HTML
+### Изображения
 
-- or ul tags
-- or nested ul tags
-    - i`m nested tag
-1. or ol tags  
-
-### You can add an image!
 ![Tux, the Linux mascot](https://tineye.com/images/meloncat.jpg)
 
-#### Also you can add link
+#### Ссылки
 
 <https://www.markdownguide.org/basic-syntax/>
 

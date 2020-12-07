@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: teal;
+        }
+        .carousel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .wrapper {
+            display: flex;
+            position: relative;
+        }
+        .wrapper:hover {
+            cursor: pointer;
+        }
+        .card {
+            height: 400px;
+            width: 300px;
+            background-color: tomato;
+            margin: 0 20px;
+        }
+        .control {
+            width: 20px;
+            height: 20px;
+            background-color: violet;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="wrapper" draggable="true">
+            <div class="card">
+                <div class="header">Header-1</div>
+                <div class="body">some body text</div>
+            </div>
+            <div class="card">
+                <div class="header">Header-2</div>
+                <div class="body">some body text</div>
+            </div>
+            <div class="card">
+                <div class="header">Header-3</div>
+                <div class="body">some body text</div>
+            </div>
+            <div class="card">
+                <div class="header">Header-4</div>
+                <div class="body">some body text</div>
+            </div>
+            <div class="card">
+                <div class="header">Header-5</div>
+                <div class="body">some body text</div>
+            </div>
+        </div>
+        <div class="control"></div>
+    </div>
+    <script>
+        let control = document.querySelector('.control')
+        let wrapper = document.querySelector('.wrapper')
+        let pos = 0
+        control.addEventListener('click', (event) => {
+            pos += 50
+            wrapper.style.left = pos + 'px'
+        })
+        wrapper.addEventListener('drag', (event) => {
+            let mouseX = event.clientX;
+            wrapper.style.left = mouseX * 0.75 + 'px'
+
+        })
+    </script>
+</body>
+</html>
