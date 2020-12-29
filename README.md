@@ -12,7 +12,7 @@
 
 ### Изображения
 
-![Tux, the Linux mascot](https://tineye.com/images/meloncat.jpg)
+![Котик](https://tineye.com/images/meloncat.jpg)
 
 #### Ссылки
 
